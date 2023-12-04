@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Century', sans-serif;
+}
+
+/* nav section */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  z-index: 1000;
+  height: 50px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 10px 0;
+}
+
+.navbar ul li {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  text-align: center; /* Center the text in the nav items */
+}
+
+.navbar ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+  display: block; /* Make the entire area clickable */
+}
+
+.navbar ul li a:hover {
+  box-shadow: 0 0 20px rgb(9, 249, 229);
+  border-radius: 10px;
+  margin: 1px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: url('vintage-grunge-blue-marble-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  z-index: 0;
+}
+
+.left,
+.right {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(196, 196, 196, 0.1);
+}
+
+.left {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Styles */
+
+@media only screen and (min-width: 600px) {
+  /* Adjust styles for smaller screens */
+  .navbar {
+    height: 60px;
+  }
+
+  .navbar ul li a {
+    padding: 10px 12px;
+  }
+
+  .main {
+    padding: 30px;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* Adjust the styles for medium-sized screens and larger */
+  .navbar {
+    height: 80px;
+  }
+
+  .navbar ul {
+    margin: 0;
+  }
+
+  .navbar ul li {
+    margin: 0 15px;
+  }
+
+  .navbar ul li a {
+    padding: 15px 20px;
+  }
+
+  .main {
+    padding: 40px;
+  }
+
+  .left,
+  .right {
+    width: 48%;
+  }
+}
+
+/* Continue with the rest of your CSS... */
+
+
+
+marquee {
+  background-color: rgba(0, 0, 0, 0.936);
+  font-size: x-large;
+  font-weight: 900;
+  color: aliceblue;
+}
+
+#w {
+  color: rgb(9, 249, 229);
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.right:hover,
+.left:hover {
+  border: 5px solid rgb(9, 249, 200);
+  box-shadow: 0 0 20px rgb(9, 249, 229);
+  transition: .3s ease;
+}
+
+.headings {
+  margin-top: 10px;
+  font-size: 2.5em;
+  text-shadow: 20px 2px 41px rgb(241, 238, 11);
+}
+
+#w {
+  font-size: 1.5em;
+}
+
+#about {
+  margin: 20px 0;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px; /* Adjusted padding for better responsiveness */
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background: linear-gradient(to right, #7ebce6, #2980b9);
+  transition: background 0.3s ease;
+  animation: pulse 1.5s infinite;
+}
+
+/* Adjusted styles for better responsiveness */
+
+
+.social-icons {
+  display: flex;
+  justify-content: start;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #3498db;
+  font-size: 30px;
+}
+
+.btn:hover , button:hover{
+  background: linear-gradient(to right, #000000, #1fb885);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: min-content;
+
+  background-color: rgb(4, 2, 37);
+}
+
+
+.abt_left {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  
+}
+
+.abt_left img {
+  width: 90%;
+  border-radius: 5%;
+  padding: 10%;
+
+}
+
+.abt_ryt {
+  flex: 1;
+  padding: 10px;
+  color: #fff;
+
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.abt_ryt p {
+  line-height: 1.6;
+}
+
+.abt_left img:hover {
+  transform: scale(1.1); /* Scale the image by 10% on hover */
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 100px;
+
+  
+  background-color: rgb(4, 2, 37);
+  height: 700px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+ 
+  perspective: 1000px;
+  margin: 20px;
+}
+.proj ,.more{
+  color: #fff;
+  margin-top: 100px;
+  font-size: xx-large;
+  text-shadow: 2px 2px 4px white; /* Adding a text shadow for a subtle glow effect */
+  animation: fadeIn 0.5s ease-in-out; /* Adding a fade-in animation */
+
+  /* Additional styles for better readability */
+  font-weight: bold;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+h2{
+  color: #fff;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front img{
+  background-color: #bbb;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.flip-card-back {
+  background: linear-gradient(to right, #7ebce6, #2980b9);
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+label {
+  margin-bottom: 8px;
+  color: white;
+  font-size: large;
+}
+
+input, textarea {
+  margin-bottom: 16px;
+  padding: 8px;
+  border: 2px solid #0e0b0b;
+  border-radius: 4px;
+}
+
+button {
+  background: linear-gradient(to right, #7ebce6, #2980b9);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+}
+
+center{
+  color: #fff;
+}
+
+section {
+  margin: 2px;
+  padding: 20px;
+ 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+header,section{
+  background-color: rgb(4, 2, 37);
+}
+
